@@ -13,6 +13,7 @@ pipeline {
                 sh '''
                     ./gradlew clean test --info
                 '''
+            }
         }
     }
 }
