@@ -4,7 +4,7 @@ pipeline {
             checkout scm
         }
 
-        stage (‘Test Ui’){
+        stage (‘TestUi’){
             dir(“Poc-Automation_Web”) {
                 sh '''
                     ./gradlew clean test --info
