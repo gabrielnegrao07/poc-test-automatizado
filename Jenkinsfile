@@ -1,14 +1,18 @@
 pipeline {
     stages {
         stage (‘Checkout’){
-            checkout scm
+            steps {
+                checkout scm
+            }
         }
 
         stage (‘TestUi’){
-            dir(“Poc-Automation_Web”) {
-                sh '''
-                    ./gradlew clean test --info
-                '''
+            steps {
+                dir(“Poc-Automation_Web”) {
+                    sh '''
+                        ./gradlew clean test --info
+                    '''
+                }
             }
         }
     }
