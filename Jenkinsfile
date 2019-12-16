@@ -1,15 +1,13 @@
 node {
-    stage (‘SCM checkout’) {
+    stage (‘SCM checkout’){
         git scm
     }
-
-    stage (‘Build’) {
-        dir(“Poc-Automacao_Web”) {
-            sh “mvn clean install”
-        }
-
-        dir(“comtest/target”) {
-            sh “java -jar com.test-1.0-SNAPSHOT.jar”
+    stage (‘Test UI’){
+        dir(“Poc-Automation_Web”) {
+            sh '''
+                ./gradlew clean
+                ./gradlew build
+            '''
         }
     }
 }

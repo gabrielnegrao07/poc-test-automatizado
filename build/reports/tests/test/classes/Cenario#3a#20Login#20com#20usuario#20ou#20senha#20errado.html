@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class runners.ChromeTest</title>
+<title>Test results - Class Cenario: Login com usuario ou senha errado</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class runners.ChromeTest</h1>
+<h1>Class Cenario: Login com usuario ou senha errado</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/runners.html">runners</a> &gt; ChromeTest</div>
+<a href="../packages/default-package.html">default-package</a> &gt; Cenario: Login com usuario ou senha errado</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">0</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">-</div>
+<div class="counter">1.678s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox success" id="successRate">
-<div class="percent">-</div>
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -66,9 +66,6 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -80,35 +77,43 @@
 <th>Result</th>
 </tr>
 </thead>
+<tr>
+<td class="success">Dado que um usuario entre com o user &quot;admin2&quot;</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">E a senha &quot;1223&quot;</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Então deve ocorrer o um erro de acesso</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Quando clicar no botão login</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td class="success">1.678s</td>
+<td class="success">passed</td>
+</tr>
 </table>
 </div>
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre># encoding: utf-8
-# language: pt
-Funcionalidade: Login
-
-  @teste2
-  Cenario: Login com usuario ou senha errado      ?[90m# login.feature:16?[0m
-    ?[32mDado ?[0m?[32mque um usuario entre com o user &quot;?[0m?[32m?[1madmin2?[0m?[32m&quot;?[0m ?[90m# LoginSteps.queUmUsuarioEntreComOUser(String)?[0m
-    ?[32mE ?[0m?[32ma senha &quot;?[0m?[32m?[1m1223?[0m?[32m&quot;?[0m                              ?[90m# LoginSteps.aSenha(String)?[0m
-    ?[32mQuando ?[0m?[32mclicar no botão login?[0m                  ?[90m# LoginSteps.clicarNoBotãoLogin()?[0m
-    ?[32mEntão ?[0m?[32mdeve ocorrer o um erro de acesso?[0m        ?[90m# LoginSteps.deveOcorrerOUmErroDeAcesso()?[0m
-
-2 Scenarios (?[32m2 passed?[0m)
-8 Steps (?[32m8 passed?[0m)
-0m4.552s
-
-</pre>
-</span>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>Starting ChromeDriver 2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5) on port 17792
-[1576498796,094][SEVERE]: bind() failed: Cannot assign requested address (99)
-Only local connections are allowed.
+<pre>
+  @teste1
+  Cenario: Login no site                         ?[90m# login.feature:7?[0m
+    ?[32mDado ?[0m?[32mque um usuario entre com o user &quot;?[0m?[32m?[1madmin?[0m?[32m&quot;?[0m ?[90m# LoginSteps.queUmUsuarioEntreComOUser(String)?[0m
+    ?[32mE ?[0m?[32ma senha &quot;?[0m?[32m?[1madmin?[0m?[32m&quot;?[0m                            ?[90m# LoginSteps.aSenha(String)?[0m
+    ?[32mQuando ?[0m?[32mclicar no botão login?[0m                 ?[90m# LoginSteps.clicarNoBotãoLogin()?[0m
+    ?[32mEntão ?[0m?[32mdeve ocorrer o login com sucesso?[0m       ?[90m# LoginSteps.deveOcorrerOLoginComSucesso()?[0m
 </pre>
 </span>
 </div>
