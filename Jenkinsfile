@@ -1,4 +1,8 @@
 pipeline {
+    agent {
+        label 'java8'
+    }
+
     stages {
         stage (‘Checkout’){
             steps {
