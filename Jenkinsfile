@@ -10,12 +10,9 @@ pipeline {
 
         stage (‘TestUi’){
             steps {
-                dir(“Poc-Automation_Web”) {
-                    sh '''
-                        ./gradlew clean test --info
-                    '''
-                }
-            }
+                sh '''
+                    ./gradlew clean test --info
+                '''
         }
     }
 }
