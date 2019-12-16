@@ -1,6 +1,5 @@
 package pages;
 
-import configuration.DriverFactory;
 import helper.ElementHelper;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -26,7 +25,7 @@ public class LoginPage extends BasePage{
 //    private WebElement errorlogin;
 
     public void openURL() {
-        getDriver().get("http://localhost:4200/login");
+        getDriver().get("http://algamoney-web.s3-website-sa-east-1.amazonaws.com/login");
     }
 
     public LoginPage fillEmail(String email) {
@@ -55,7 +54,7 @@ public class LoginPage extends BasePage{
 
     public LoginPage loginSuccess() {
         ElementHelper.waitForPageToLoad(By.cssSelector("h1"), "Dashboard", 30);
-        Assert.assertThat(getDriver().findElement(By.cssSelector("h1")).getText(), containsString("Dashboard1"));
+        Assert.assertThat(getDriver().findElement(By.cssSelector("h1")).getText(), containsString("Dashboard"));
         return this;
 
     }

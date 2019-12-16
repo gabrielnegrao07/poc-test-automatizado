@@ -5,19 +5,20 @@
 # language: pt
 Funcionalidade: Login
 
-  Cenario: Login no site                         ?[90m# login.feature:6?[0m
-    ?[32mDado ?[0m?[32mque um usuario entre com o user "?[0m?[32m?[1madmin?[0m?[32m"?[0m ?[90m# LoginSteps.queUmUsuarioEntreComOUser(String)?[0m
-    ?[32mE ?[0m?[32ma senha "?[0m?[32m?[1madmin?[0m?[32m"?[0m                            ?[90m# LoginSteps.aSenha(String)?[0m
-    ?[32mQuando ?[0m?[32mclicar no botão login?[0m                 ?[90m# LoginSteps.clicarNoBotãoLogin()?[0m
-    ?[32mEntão ?[0m?[32mdeve ocorrer o login com sucesso?[0m       ?[90m# LoginSteps.deveOcorrerOLoginComSucesso()?[0m
+  @teste2
+  Cenario: Login com usuario ou senha errado      ?[90m# login.feature:16?[0m
+    ?[32mDado ?[0m?[32mque um usuario entre com o user "?[0m?[32m?[1madmin2?[0m?[32m"?[0m ?[90m# LoginSteps.queUmUsuarioEntreComOUser(String)?[0m
+    ?[32mE ?[0m?[32ma senha "?[0m?[32m?[1m1223?[0m?[32m"?[0m                              ?[90m# LoginSteps.aSenha(String)?[0m
+    ?[32mQuando ?[0m?[32mclicar no botão login?[0m                  ?[90m# LoginSteps.clicarNoBotãoLogin()?[0m
+    ?[32mEntão ?[0m?[32mdeve ocorrer o um erro de acesso?[0m        ?[90m# LoginSteps.deveOcorrerOUmErroDeAcesso()?[0m
 
-1 Scenarios (?[32m1 passed?[0m)
-4 Steps (?[32m4 passed?[0m)
-0m2.649s
+2 Scenarios (?[32m2 passed?[0m)
+8 Steps (?[32m8 passed?[0m)
+0m4.454s
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5) on port 1659
-[1576493391,131][SEVERE]: bind() failed: Cannot assign requested address (99)
+  <system-err><![CDATA[Starting ChromeDriver 2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5) on port 4263
+[1576497311,773][SEVERE]: bind() failed: Cannot assign requested address (99)
 Only local connections are allowed.
 ]]></system-err>
 </testsuite>

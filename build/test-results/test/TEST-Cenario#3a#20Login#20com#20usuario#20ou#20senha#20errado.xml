@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cenario: Login com usuario ou senha errado" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-12-16T11:55:16" hostname="INOTE322" time="1.283">
+  <properties/>
+  <testcase name="Dado que um usuario entre com o user &quot;admin2&quot;" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
+  <testcase name="E a senha &quot;1223&quot;" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
+  <testcase name="Quando clicar no botão login" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
+  <testcase name="Então deve ocorrer o um erro de acesso" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
+  <testcase name="classMethod" classname="Cenario: Login com usuario ou senha errado" time="1.563"/>
+  <system-out><![CDATA[
+  @teste1
+  Cenario: Login no site                         ?[90m# login.feature:7?[0m
+    ?[32mDado ?[0m?[32mque um usuario entre com o user "?[0m?[32m?[1madmin?[0m?[32m"?[0m ?[90m# LoginSteps.queUmUsuarioEntreComOUser(String)?[0m
+    ?[32mE ?[0m?[32ma senha "?[0m?[32m?[1madmin?[0m?[32m"?[0m                            ?[90m# LoginSteps.aSenha(String)?[0m
+    ?[32mQuando ?[0m?[32mclicar no botão login?[0m                 ?[90m# LoginSteps.clicarNoBotãoLogin()?[0m
+    ?[32mEntão ?[0m?[32mdeve ocorrer o login com sucesso?[0m       ?[90m# LoginSteps.deveOcorrerOLoginComSucesso()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
