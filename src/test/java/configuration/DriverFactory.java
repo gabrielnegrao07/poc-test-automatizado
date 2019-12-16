@@ -15,7 +15,7 @@ public class DriverFactory {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--disable-dev-shm-usage");
 
-        webDriver = new ChromeDriver();
+        webDriver = new ChromeDriver(chromeOptions);
         webDriver.get(hostToTest);
 
         return webDriver;
