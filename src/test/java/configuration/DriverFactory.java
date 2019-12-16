@@ -3,7 +3,6 @@ package configuration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
     private static WebDriver webDriver;
@@ -14,13 +13,6 @@ public class DriverFactory {
 
         webDriver = new ChromeDriver();
         webDriver.get(hostToTest);
-
-        return webDriver;
-    }
-
-    public static WebDriver createFirefoxDriverByParameter() {
-        webDriver = new FirefoxDriver();
-
 
         return webDriver;
     }
