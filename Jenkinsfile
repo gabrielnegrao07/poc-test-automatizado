@@ -18,18 +18,6 @@ pipeline {
     }
 
     post {
-        failure {
-            steps {
-                //sendMsgToSlack("testes não finalizado com sucesso! :segundou:")
-            }
-        }
-
-        success {
-            steps {
-                //sendMsgToSlack("testes finalizado com sucesso! :sextou:")
-            }
-        }
-
         always {
             deleteDir()
         }
