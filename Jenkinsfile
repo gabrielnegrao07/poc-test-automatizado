@@ -1,8 +1,8 @@
 node {
-    stage (‘SCM checkout’){
+    stage (‘SCM’){
         git scm
     }
-    stage (‘Test UI’){
+    stage (‘TestUI’){
         dir(“Poc-Automation_Web”) {
             sh '''
                 ./gradlew clean
