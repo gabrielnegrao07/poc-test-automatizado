@@ -19,11 +19,15 @@ pipeline {
 
     post {
         failure {
-            //sendMsgToSlack("testes não finalizado com sucesso! :segundou:")
+            steps {
+                //sendMsgToSlack("testes não finalizado com sucesso! :segundou:")
+            }
         }
 
         success {
-            //sendMsgToSlack("testes finalizado com sucesso! :sextou:")
+            steps {
+                //sendMsgToSlack("testes finalizado com sucesso! :sextou:")
+            }
         }
 
         always {
