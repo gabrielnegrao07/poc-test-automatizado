@@ -13,7 +13,7 @@ public class DriverFactory {
         String hostToTest = "http://algamoney-web.s3-website-sa-east-1.amazonaws.com/login";
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--headless");
 
         webDriver = new ChromeDriver(chromeOptions);
         webDriver.get(hostToTest);
