@@ -21,7 +21,6 @@ public class DriverFactory {
     public static WebDriver createFirefoxDriverByParameter() {
         webDriver = new FirefoxDriver();
 
-        webDriver.get("http://localhost:4200/login");
 
         return webDriver;
     }
