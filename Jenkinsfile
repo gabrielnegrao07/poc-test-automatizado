@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Checkout source'){
+        stage ('Checkout source') {
             steps {
                 checkout scm
             }
@@ -14,6 +14,20 @@ pipeline {
                     ./gradlew clean test --info
                 '''
             }
+        }
+    }
+
+    post {
+        failure {
+            //sendMsgToSlack("não finalizado os testes de API :sadparrot:")
+        }
+
+        success {
+            //sendMsgToSlack("finalizado os testes! :balloon:")
+        }
+
+        always {
+            deleteDir()
         }
     }
 }
