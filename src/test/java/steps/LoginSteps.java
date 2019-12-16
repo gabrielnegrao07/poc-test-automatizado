@@ -1,9 +1,8 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
-import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import pages.LoginPage;
 
@@ -27,13 +26,13 @@ public class LoginSteps {
         loginPage.login();
     }
 
-    @Então("^deve ocorrer o login com sucesso$")
+    @Entao("^deve ocorrer o login com sucesso$")
     public void deveOcorrerOLoginComSucesso() {
         loginPage.loginSuccess();
 
     }
 
-    @Então("^deve ocorrer o um erro de acesso$")
+    @Entao("^deve ocorrer o um erro de acesso$")
     public void deveOcorrerOUmErroDeAcesso() {
         loginPage.loginFail();
 
