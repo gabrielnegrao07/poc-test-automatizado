@@ -16,12 +16,6 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            deleteDir()
-        }
-    }
 }
 
 def sendMsgToSlack(message) {
