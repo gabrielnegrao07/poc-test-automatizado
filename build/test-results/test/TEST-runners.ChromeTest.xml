@@ -14,11 +14,11 @@ Funcionalidade: Login
 
 2 Scenarios (?[32m2 passed?[0m)
 8 Steps (?[32m8 passed?[0m)
-0m4.454s
+0m4.552s
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5) on port 4263
-[1576497311,773][SEVERE]: bind() failed: Cannot assign requested address (99)
+  <system-err><![CDATA[Starting ChromeDriver 2.45.615279 (12b89733300bd268cff3b78fc76cb8f3a7cc44e5) on port 17792
+[1576498796,094][SEVERE]: bind() failed: Cannot assign requested address (99)
 Only local connections are allowed.
 ]]></system-err>
 </testsuite>

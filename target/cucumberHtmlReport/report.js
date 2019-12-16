@@ -60,7 +60,7 @@ formatter.match({
   "location": "LoginSteps.queUmUsuarioEntreComOUser(String)"
 });
 formatter.result({
-  "duration": 432966785,
+  "duration": 409867042,
   "status": "passed"
 });
 formatter.match({
@@ -73,21 +73,21 @@ formatter.match({
   "location": "LoginSteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 102963463,
+  "duration": 99422543,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clicarNoBotãoLogin()"
 });
 formatter.result({
-  "duration": 122559127,
+  "duration": 125218501,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.deveOcorrerOLoginComSucesso()"
 });
 formatter.result({
-  "duration": 2243030054,
+  "duration": 2255898122,
   "status": "passed"
 });
 formatter.scenario({
@@ -134,7 +134,7 @@ formatter.match({
   "location": "LoginSteps.queUmUsuarioEntreComOUser(String)"
 });
 formatter.result({
-  "duration": 272642908,
+  "duration": 326565389,
   "status": "passed"
 });
 formatter.match({
@@ -147,21 +147,21 @@ formatter.match({
   "location": "LoginSteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 103798793,
+  "duration": 98361249,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.clicarNoBotãoLogin()"
 });
 formatter.result({
-  "duration": 87161301,
+  "duration": 89597329,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.deveOcorrerOUmErroDeAcesso()"
 });
 formatter.result({
-  "duration": 1089054379,
+  "duration": 1147372603,
   "status": "passed"
 });
 });

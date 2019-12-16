@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cenario: Login com usuario ou senha errado" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-12-16T11:55:16" hostname="INOTE322" time="1.283">
+<testsuite name="Cenario: Login com usuario ou senha errado" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-12-16T12:20:01" hostname="INOTE322" time="1.342">
   <properties/>
   <testcase name="Dado que um usuario entre com o user &quot;admin2&quot;" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
   <testcase name="E a senha &quot;1223&quot;" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
   <testcase name="Quando clicar no botão login" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
   <testcase name="Então deve ocorrer o um erro de acesso" classname="Cenario: Login com usuario ou senha errado" time="0.0"/>
-  <testcase name="classMethod" classname="Cenario: Login com usuario ou senha errado" time="1.563"/>
+  <testcase name="classMethod" classname="Cenario: Login com usuario ou senha errado" time="1.678"/>
   <system-out><![CDATA[
   @teste1
   Cenario: Login no site                         ?[90m# login.feature:7?[0m
