@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage (‘Checkout’){
+        stage ('Checkout source'){
             steps {
                 checkout scm
             }
         }
 
-        stage (‘TestUi’){
+        stage ('Test Front'){
             steps {
                 sh '''
                     ./gradlew clean test --info
