@@ -9,7 +9,7 @@ public class DriverFactory {
     private static WebDriver webDriver;
 
     public static WebDriver createDriverByParameter() {
-        System.setProperty("webdriver.chrome.driver", "/home/ice_aalmeida/prj/treinamento-automacao/webdrivers/chromedriver_linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/automatizador/webdriver/chromedriver_79.0.3945.36");
         String hostToTest = "http://algamoney-web.s3-website-sa-east-1.amazonaws.com/login";
 
         webDriver = new ChromeDriver();
